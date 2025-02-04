@@ -1,0 +1,21 @@
+diff --git a/Makefile b/Makefile
+index 55f1503..57d31af 100644
+--- a/Makefile
++++ b/Makefile
+@@ -6,6 +6,7 @@ SRCS = $(wildcard src/*.cpp)
+ PREFIX ?= /usr/local
+ BINDIR ?= $(PREFIX)/bin
+ LIBDIR ?= $(PREFIX)/lib
++LIBNLDIR ?= /usr/include/libnl3
+ DATADIR ?= $(PREFIX)/share
+ BUILDDIR = build
+ 
+@@ -32,7 +33,7 @@ else
+ endif
+ ifneq (, $(shell grep -E '^#define MODULE_NETWORK' src/config.hpp))
+ 	SRCS += src/modules/network.cpp
+-	CXXFLAGS += -I /usr/include/libnl3/ -lnl-3 -lnl-genl-3
++	CXXFLAGS += -I $(LIBNLDIR) -lnl-3 -lnl-genl-3
+ endif
+ ifneq (, $(shell grep -E '^#define MODULE_BATTERY' src/config.hpp))
+ 	SRCS += src/modules/battery.cpp
