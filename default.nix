@@ -34,16 +34,16 @@ stdenv.mkDerivation {
     wrapGAppsHook4
     wayland-scanner
     libnl
+    curl
+    dbus
+    jsoncpp
+    wireplumber
+    playerctl
   ];
 
   buildInputs = [
-    jsoncpp
     gtkmm4
     gtk4-layer-shell
-    curl
-    dbus
-    wireplumber
-    playerctl
   ];
 
   patches = [
