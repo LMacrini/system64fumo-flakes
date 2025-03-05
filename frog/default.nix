@@ -39,7 +39,7 @@ stdenv.mkDerivation {
   installPhase = ''
     runHook preInstall
     mkdir -p $out/bin
-    cp build/frog $out/bin
+    cp build/frog $out/bin/frogfm
     mkdir -p $out/share/sys64/frog
     cp config.conf $out/share/sys64/frog
     cp style.css $out/share/sys64/frog
