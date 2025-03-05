@@ -11,6 +11,9 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
-    packages.${system}.sysbar = import ./sysbar pkgs;
+    packages.${system} = {
+      sysbar = import ./sysbar pkgs;
+      frog = import ./frog pkgs;
+    };
   };
 }
