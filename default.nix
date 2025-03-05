@@ -19,13 +19,13 @@
 
 stdenv.mkDerivation {
   pname = "sysbar";
-  version = "unstable-2025-02-03";
+  version = "unstable-2025-02-23";
 
   src = fetchFromGitHub {
     owner = "System64fumo";
     repo = "sysbar";
-    rev = "6107dab9ce5cc55a43bae481bd7e1a55a726a58e";
-    hash = "sha256-45p/6e13eBGAiYJJbddY0lhlouBUY1lTVRXySlx2sqQ=";
+    rev = "c77ca19bb36657e1f725e999d146a1bab0d49a3e";
+    hash = "sha256-KVYz4YkLAtYlRfqCHdXGHK8z+ACJRHaXpB4TaqbKuVQ=";
   };
 
   nativeBuildInputs = [
