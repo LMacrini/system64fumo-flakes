@@ -22,7 +22,6 @@ stdenv.mkDerivation {
     hash = "sha256-wtn/1nND+8DW9j+ovdUiB/puM9EEraC16wEAdOjO+WA=";
   };
 
-  # PREFIX = "$out";
 
   buildInputs = [
     gtkmm4
