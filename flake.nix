@@ -11,6 +11,6 @@
     pkgs = nixpkgs.legacyPackages.${system};
   in
   {
-    packages.${system}.default = import ./default.nix pkgs;
+    packages.${system}.sysbar = import ./sysbar.nix pkgs;
   };
 }
