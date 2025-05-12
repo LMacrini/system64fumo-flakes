@@ -13,13 +13,13 @@
 }:
 stdenv.mkDerivation {
   pname = "frogfm";
-  version = "unstable-2025-02-05";
+  version = "unstable-2025-03-18";
 
   src = fetchFromGitHub {
     owner = "System64Fumo";
     repo = "frog";
-    rev = "147802b112d7abd1dbfc8f13214200b339899d45";
-    hash = "sha256-wtn/1nND+8DW9j+ovdUiB/puM9EEraC16wEAdOjO+WA=";
+    rev = "178b7de000c524620a1aa89c99dd2934afb508fe";
+    hash = "sha256-xsWONRJNrfIuztWpqX2QEIJRuVPmWVnBZFvmy4m91Ak=";
   };
 
 
